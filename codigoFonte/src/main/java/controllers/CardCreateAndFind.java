@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 import dao.CardDAO;
 import model.Card;
 
-
 @WebServlet("/CardMakeAndSearch")
 public class CardCreateAndFind extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -51,5 +50,4 @@ public class CardCreateAndFind extends HttpServlet {
 	}
 
 }
-
 

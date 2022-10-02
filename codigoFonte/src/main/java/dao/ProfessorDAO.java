@@ -11,7 +11,7 @@ import java.util.List;
 import db.MySqlConnection;
 import model.Professor;
 
-public class ProfessorDAO implements CRUD {
+public class ProfessorDAO {
 
 	private static Connection connection = MySqlConnection.createConnection();
 	private static String sql;
@@ -136,4 +136,5 @@ public class ProfessorDAO implements CRUD {
 
 		}
 	}
+	
 }

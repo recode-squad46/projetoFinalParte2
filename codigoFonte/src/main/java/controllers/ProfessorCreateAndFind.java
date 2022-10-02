@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 import dao.ProfessorDAO;
 import model.Professor;
 
-
 @WebServlet("/ProfessorMakeAndSearch")
 public class ProfessorCreateAndFind extends HttpServlet {
 	private static final long serialVersionUID = 1L;

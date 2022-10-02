@@ -36,8 +36,8 @@ public class PartidaMemoriaFindAndUpdate extends HttpServlet {
 		PartidaMemoria partidaMemoria = new PartidaMemoria();
 		partidaMemoria.setId(Integer.parseInt(request.getParameter("id")));
 		partidaMemoria.setTempoPartida(Integer.parseInt(request.getParameter("tempoPartida")));
-		partidaMemoria.setQtdJogadas(Integer.parseInt(request.getParameter("QtdJogadas")));
-		partidaMemoria.setIdAluno(Integer.parseInt(request.getParameter("idAluno")));
+		partidaMemoria.setQtdJogadas(Integer.parseInt(request.getParameter("qtdJogadas")));
+		//partidaMemoria.setIdAluno(Integer.parseInt(request.getParameter("idAluno")));
 
 		
 		PartidaMemoriaDAO.update(partidaMemoria);

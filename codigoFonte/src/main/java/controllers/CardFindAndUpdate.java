@@ -35,6 +35,7 @@ public class CardFindAndUpdate extends HttpServlet {
 
 		Card card = new Card();
 		card.setId(Integer.parseInt(request.getParameter("id")));
+		card.setNome(request.getParameter("nome"));
 		card.setImgCard(request.getParameter("imgCard"));
 
 		

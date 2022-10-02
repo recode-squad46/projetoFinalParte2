@@ -5,27 +5,27 @@
     <meta charset="UFT-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../assets/style/main.css" />
-    <title> Esqueci senha - LeTurminha </title>
+    <link rel="stylesheet" type="text/css" href="./assets/style/main.css" />
+    <title> LeTurminha </title>
 </head>
 
 <body>
     <header  class="container-fluid d-flex flex-row align-items-center cor-de-fundo-header justify-content-center">
         <div class="container row justify-content-between">
             <div>
-                <a href="./index.html"> <img src="../assets/img/logo-leturminha.png" /> </a>
+                <a href="./index.html"> <img src="./assets/img/logo-leturminha.png" /> </a>
             </div>
             <div class="d-flex align-items-center">
                 <nav>
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link active cor-link" href="../cadastro/login.html">Login</a>
+                            <a class="nav-link active cor-link" href="./cadastro/login.html">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active cor-link" href="../cadastro/cadastro.html">Cadastro</a>
+                            <a class="nav-link active cor-link" href="./cadastro/cadastro.html">Cadastro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active cor-link" href="../jogo da memoria/jogo.html">Jogo da Memória</a>
+                            <a class="nav-link active cor-link" href="./jogo da memoria/jogo.html">Jogo da Memória</a>
                         </li>
                     </ul>
                 </nav>
@@ -33,22 +33,30 @@
         </div>
     </header>
     <main>
-        <section class="container d-flex flex-column justify-content-center pb-2">
-            <div>
-                <h2 class="titulo-aba d-flex justify-content-center pt-3 pb-2">Nos informe seu email para resgatar sua senha</h2>
-            </div>
-            <form class="py-4" action="esqueci" method="POST">
-                <div class="form">
-                    <div class="container d-flex flex-row col-12 col-md-8 justify-content-center">
-                        <label for="inputEmail4"></label>
-                        <input type="email" class="form-control text-input" id="inputEmail4" placeholder="joaosilva@email.com">
-                        <span class="campo-obrigatorio pl-2">*</span>
-                    </div>
+        <section>
+            <div class="container">
+                <div class="col-12">
+                    <img class="banner-principal" src="./assets/img/Foto1.jpg" />
                 </div>
-            </form>
-            <div class="container d-flex flex-row col-8 col-md-4 justify-content-around pb-5">
-                <a href="../cadastro/login.html"> <button type="submit" class="btn btn-config">Voltar</button> </a>
-                <a href="../professor/link-do-jogo.html"> <button type="submit" class="btn btn-config">Enviar</button> </a>
+            </div>
+        </section>
+        <section class="container my-4 d-flex flex-row align-items-center justify-content-center">
+            <div class="container row">
+                <div class="texto-conteudo col-12 col-lg-6 col-xl-7">
+                    <h1 class="titulo-aba pb-4">Já parou para pensar nas vantagens dos jogos educativos?</h1>
+                    <h2 class="pb-3">A cada jogo, novos conhecimentos!</h2>
+                    <p class="pb-2">
+                        Nos anos inciais do Ensino Fundamental, o lúdico é ainda uma das práticas
+                            pedagógicas mais importantes como facilitador de aprendizagem de leitura.</p>
+                    <p>
+                        Através dessa plataforma prometemos mostrar como um <b>jogo simples infantil</b>
+                        pode incentivar e aumentar a proficiência em leitura!. <br/>
+                        Está esperando o que para experimentar!?
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-5">
+                    <img class="imagem-conteudo" src="./assets/img/Foto2.png" />
+                </div>
             </div>
         </section>
     </main>
