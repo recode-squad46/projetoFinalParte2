@@ -11,20 +11,20 @@ import java.util.List;
 import db.MySqlConnection;
 import model.PartidaMemoria;
 
-public class PartidaMemoriaDAO implements CRUD {
+public class PartidaMemoriaDAO {
 
 	private static Connection connection = MySqlConnection.createConnection();
 	private static String sql;
 		
 	public static void create(PartidaMemoria partidaMemoria) {
-		sql = "INSERT INTO tb_partidaMemoria VALUES (null, ?, ?, ?)";
+		sql = "INSERT INTO tb_partida_memoria (id, tempo_partida, qtd_jogadas) VALUES (null, ?, ?)";
 		
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			
 			preparedStatement.setInt(1, partidaMemoria.getTempoPartida());
 			preparedStatement.setInt(2, partidaMemoria.getQtdJogadas());
-			preparedStatement.setInt(3, partidaMemoria.getIdAluno());
+			//preparedStatement.setInt(3, partidaMemoria.getIdAluno());
 			
 			preparedStatement.executeUpdate();
 			
@@ -38,7 +38,7 @@ public class PartidaMemoriaDAO implements CRUD {
 	
 	public static void delete(int partidaMemoriaId) {
 		
-		sql = "DELETE FROM tb_partidaMemoria WHERE id = ?";
+		sql = "DELETE FROM tb_partida_memoria WHERE id = ?";
 		
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -58,7 +58,7 @@ public class PartidaMemoriaDAO implements CRUD {
 	
 	public static List<PartidaMemoria> find(String pesquisa) {
 		
-		sql = String.format("SELECT * FROM tb_partidaMemoria WHERE idAluno like '%%%s%%'", pesquisa, pesquisa);
+		sql = String.format("SELECT * FROM tb_partida_memoria WHERE tempo_partida like '%%%s%%' OR qtd_jogadas like '%%%s%%'", pesquisa, pesquisa);
 		List<PartidaMemoria> partidasMemoria = new ArrayList<PartidaMemoria>();
 		
 		try {
@@ -89,7 +89,7 @@ public class PartidaMemoriaDAO implements CRUD {
 	}
 	
 	public static PartidaMemoria findByPk(int partidaMemoriaId) {
-		sql = String.format("SELECT * FROM tb_partidaMemoria WHERE id like %d ", partidaMemoriaId);
+		sql = String.format("SELECT * FROM tb_partida_memoria WHERE id like %d ", partidaMemoriaId);
 		
 		try {
 			Statement statement = connection.createStatement();
@@ -117,15 +117,15 @@ public class PartidaMemoriaDAO implements CRUD {
 	}
 	
 	public static void update(PartidaMemoria partidaMemoria) {
-		sql = "UPDATE tb_partidaMemoria SET tempo_partida=?, qtd_jogadas=?, id_aluno=? WHERE id=?";
+		sql = "UPDATE tb_partida_memoria SET tempo_partida=?, qtd_jogadas=? WHERE id=?";
 		
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			
 			preparedStatement.setInt(1, partidaMemoria.getTempoPartida());
 			preparedStatement.setInt(2, partidaMemoria.getQtdJogadas());
-			preparedStatement.setInt(3, partidaMemoria.getIdAluno());
-			preparedStatement.setInt(4, partidaMemoria.getId());
+			//preparedStatement.setInt(3, partidaMemoria.getIdAluno());
+			preparedStatement.setInt(3, partidaMemoria.getId());
 			
 			preparedStatement.executeUpdate();
 			
@@ -136,5 +136,5 @@ public class PartidaMemoriaDAO implements CRUD {
 
 		}
 	}
+	
 }
-

@@ -15,9 +15,17 @@ header img {
 color: #111111 ;
 font-weight: bold;
 }
+.cor-link2 {
+	color:#026E81;
+	font-size: 20px;
+}
 .cor-link:hover {
     color: #ffffeb;
-}   
+}  
+.aba-selecionada {
+	font-weight: bold;
+	color: #f0b107;
+} 
 .banner-principal {
     width:100%;
 }
@@ -27,6 +35,12 @@ font-weight: bold;
 .imagem-conteudo {
     height: 100%;
     width: 100%;
+}
+.imagem-tamanho-max {
+	max-width: 200px;
+}
+.largura-botoes-tabela {
+	width: 265px;
 }
 footer p {
     text-align: center;
@@ -60,6 +74,25 @@ footer p {
 .btn-espaco {
     margin: 50px 0px 130px 0px
 }
+.btn-config-delete {
+    height: 80%;
+    background-color: #E35233;
+    color: white;
+    margin: 10px;
+}
+.btn-config-delete:hover {
+    color: #fcfac7;
+    background-color: #FF866C;
+}
+.search-icon {
+	margin: 0px 0px 0px 5px;
+    background-color: #5ab1c4;
+    color: white;
+}
+.search-icon:hover {
+    color: #fcfac7;
+    background-color: #87cbd9;
+}
 .titulo-aba {
     -webkit-filter: drop-shadow(3px 3px 3px #5ab1c4);
     filter: drop-shadow(3px 3px 3px  #5ab1c4);
@@ -67,7 +100,7 @@ footer p {
 .titulo-conf {
     margin-top: 15px;
 }
-.tabela-alunos {
+.tabela-padrao {
     box-shadow: 2px 2px 2px 1px #2d2d2d2f; 
     margin: 40px 0px 100px 0px;
     border: 2px solid;

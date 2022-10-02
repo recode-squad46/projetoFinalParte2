@@ -36,7 +36,7 @@ public class AlunoFindAndUpdate extends HttpServlet {
 		Aluno aluno = new Aluno();
 		aluno.setId(Integer.parseInt(request.getParameter("id")));
 		aluno.setNome(request.getParameter("nome"));
-		aluno.setIdProfessor(Integer.parseInt(request.getParameter("idProfessor")));
+		//aluno.setIdProfessor(Integer.parseInt(request.getParameter("idProfessor")));
 		
 		AlunoDAO.update(aluno);
 		

@@ -11,19 +11,19 @@ import java.util.List;
 import db.MySqlConnection;
 import model.Aluno;
 
-public class AlunoDAO implements CRUD {
+public class AlunoDAO {
 
 	private static Connection connection = MySqlConnection.createConnection();
 	private static String sql;
 		
 	public static void create(Aluno aluno) {
-		sql = "INSERT INTO tb_aluno VALUES (null, ?, ?)";
+		sql = "INSERT INTO tb_aluno (id, nome) VALUES (null, ?)";
 		
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			
 			preparedStatement.setString(1, aluno.getNome());
-			preparedStatement.setInt(2, aluno.getIdProfessor());
+			//preparedStatement.setInt(2, aluno.getIdProfessor());
 			
 			preparedStatement.executeUpdate();
 			
@@ -114,14 +114,14 @@ public class AlunoDAO implements CRUD {
 	}
 	
 	public static void update(Aluno aluno) {
-		sql = "UPDATE tb_aluno SET nome=?, id_professor=? WHERE id=?";
+		sql = "UPDATE tb_aluno SET nome=? WHERE id=?";
 		
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			
 			preparedStatement.setString(1, aluno.getNome());
-			preparedStatement.setInt(2, aluno.getIdProfessor());
-			preparedStatement.setInt(3, aluno.getId());
+			//preparedStatement.setInt(2, aluno.getIdProfessor());
+			preparedStatement.setInt(2, aluno.getId());
 			
 			preparedStatement.executeUpdate();
 			
@@ -133,4 +133,3 @@ public class AlunoDAO implements CRUD {
 		}
 	}
 }
-

@@ -36,7 +36,6 @@ public class Professor {
 	public String toString() {
 		return "Professor [id=" + id + ", nome=" + nome + ", email=" + email + ", senha=" + senha + "]";
 	}
-
 	
 	
 }

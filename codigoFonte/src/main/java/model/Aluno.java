@@ -6,6 +6,7 @@ public class Aluno {
 	private String nome;
 	private int idProfessor;
 	
+	
 	public int getId() {
 		return id;
 	}
@@ -28,5 +29,5 @@ public class Aluno {
 	public String toString() {
 		return "Aluno [id=" + id + ", nome=" + nome + ", idProfessor=" + idProfessor + "]";
 	}
-		
+	
 }

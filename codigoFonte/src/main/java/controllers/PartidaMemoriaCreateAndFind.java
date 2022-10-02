@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 import dao.PartidaMemoriaDAO;
 import model.PartidaMemoria;
 
-
 @WebServlet("/PartidaMemoriaMakeAndSearch")
 public class PartidaMemoriaCreateAndFind extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -43,7 +42,7 @@ public class PartidaMemoriaCreateAndFind extends HttpServlet {
 		
 		partidaMemoria.setTempoPartida(Integer.parseInt(request.getParameter("tempoPartida")));
 		partidaMemoria.setQtdJogadas(Integer.parseInt(request.getParameter("qtdJogadas")));
-		partidaMemoria.setIdAluno(Integer.parseInt(request.getParameter("idAluno")));
+		//partidaMemoria.setIdAluno(Integer.parseInt(request.getParameter("idAluno")));
 		
 		PartidaMemoriaDAO.create(partidaMemoria);
 		

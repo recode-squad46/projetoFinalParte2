@@ -6,7 +6,7 @@ public class PartidaMemoria {
 	private int tempoPartida;
 	private int qtdJogadas;
 	private int idAluno;
-	
+
 	
 	public int getId() {
 		return id;
@@ -37,7 +37,5 @@ public class PartidaMemoria {
 		return "PartidaMemoria [id=" + id + ", tempoPartida=" + tempoPartida + ", qtdJogadas=" + qtdJogadas
 				+ ", idAluno=" + idAluno + "]";
 	}
-	
-	
-	
+		
 }

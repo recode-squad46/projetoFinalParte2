@@ -11,7 +11,7 @@ import java.util.List;
 import db.MySqlConnection;
 import model.Card;
 
-public class CardDAO implements CRUD {
+public class CardDAO {
 
 	private static Connection connection = MySqlConnection.createConnection();
 	private static String sql;
@@ -96,7 +96,6 @@ public class CardDAO implements CRUD {
 			
 			while (resultSet.next()) {
 				
-				card.setId(resultSet.getInt("id"));
 				card.setId(resultSet.getInt("id"));
 				card.setNome(resultSet.getString("nome"));
 				card.setImgCard(resultSet.getString("img_card"));

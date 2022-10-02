@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 import dao.AlunoDAO;
 import model.Aluno;
 
-
 @WebServlet("/AlunoMakeAndSearch")
 public class AlunoCreateAndFind extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -42,7 +41,7 @@ public class AlunoCreateAndFind extends HttpServlet {
 		Aluno aluno = new Aluno();
 		
 		aluno.setNome(request.getParameter("nome"));
-		aluno.setIdProfessor(Integer.parseInt(request.getParameter("idProfessor")));
+		//aluno.setIdProfessor(Integer.parseInt(request.getParameter("idProfessor")));
 		
 		AlunoDAO.create(aluno);
 		
@@ -51,4 +50,3 @@ public class AlunoCreateAndFind extends HttpServlet {
 	}
 
 }
-
