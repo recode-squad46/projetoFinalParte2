@@ -76,10 +76,10 @@
 						<thead>
 							<tr>
 								<th>#</th>
-								<!-- <th>Id Aluno</th>-->
+								<!-- Fui informado que não será cobrada relacionamento entre tabelas nessa entrega <th>Id Aluno</th>-->
 								<th>Tempo de partida</th>
 								<th>Quantidade de Jogadas</th>
-								<th>Pontuação</th>
+								<!-- Será elaborado um campo calculado na próxima entrega <th>Pontuação</th> -->
 								<th>Ações</th>
 							</tr>
 						</thead>
@@ -90,7 +90,7 @@
 									<!-- <td>${partidaMemoria.idAluno}</td>-->
 									<td>${partidaMemoria.tempoPartida} segundos</td>
 									<td>${partidaMemoria.qtdJogadas}</td>
-									<td></td>
+									<!--<td></td>-->
 									<td class="largura-botoes-tabela">
 										<a href="PartidaMemoriaUpdate?partidaMemoriaId=${partidaMemoria.id}"> <button type="submit" class="btn btn-config"> <i class="bi bi-pencil-square"></i> Alterar</button></a>
 										<a href="PartidaMemoriaRemove?partidaMemoriaId=${partidaMemoria.id}"> <button type="submit" class="btn btn-config-delete"> <i class="bi bi-trash3-fill"></i> Deletar</button></a>
