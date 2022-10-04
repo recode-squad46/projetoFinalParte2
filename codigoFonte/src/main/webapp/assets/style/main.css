@@ -39,6 +39,16 @@ font-weight: bold;
 .imagem-tamanho-max {
 	max-width: 200px;
 }
+.mascote-pequeno {
+	max-width: 250px;
+}
+.inverter-foto{
+	transform: scaleX(-1);
+}
+.imagem-anexo {
+    height: 80%;
+    width: 80%;
+}
 .largura-botoes-tabela {
 	width: 265px;
 }
@@ -189,4 +199,3 @@ tbody tr:nth-child(even) {
     bottom:0%;
     line-height: auto;
 }
-
