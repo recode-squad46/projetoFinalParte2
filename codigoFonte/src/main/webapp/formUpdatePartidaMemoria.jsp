@@ -18,7 +18,7 @@
                 <nav>
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link active cor-link" href="">Como usar</a>
+                            <a class="nav-link active cor-link" href="./nossoProjeto.html">Como usar</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active cor-link" href="ProfessorMakeAndSearch">Professor</a>
