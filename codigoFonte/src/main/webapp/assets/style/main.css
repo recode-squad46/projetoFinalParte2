@@ -146,6 +146,15 @@ tbody tr:nth-child(even) {
     background-color: #fcfac7 ;
     padding: 20px;
 }
+
+
+#iniciar_jogo {
+    border: 1px solid #111;
+    border-radius: 10px ;
+    background-color: #fcfac7 ;
+    padding: 20px;
+    text-align: center;
+}
 .front img{
     width: 100%;
     object-fit: cover;
